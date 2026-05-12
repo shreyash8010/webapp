@@ -3,7 +3,15 @@ os: linux
 files:
   - source: /index.html
     destination: /var/www/html
-hooks:
+  - source: /about.html
+    destination: /var/www/html
+  - source: /service.html
+    destination: /var/www/html
+  - source: /contact.html
+    destination: /var/www/html
+  - source: /style.css
+    destination: /var/www/html
+hoos:
   BeforeInstall:
     - location: scripts/dep.sh
       timeout: 240
